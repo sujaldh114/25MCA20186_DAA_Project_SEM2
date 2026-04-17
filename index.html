@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Smart Route Optimizer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h1>AI-Based Smart Route Optimization System</h1>
+
+<p>Click order: <b>Start → Goals → Traffic</b></p>
+
+<div id="controls">
+
+    <select id="algo">
+        <option value="astar">A* (Best Optimal)</option>
+        <option value="dijkstra">Dijkstra (Weighted)</option>
+        <option value="bfs">BFS (Unweighted)</option>
+        <option value="dfs">DFS (Depth First)</option>
+        <option value="best_first">Best First (Greedy)</option>
+        <option value="hill_climbing">Hill Climbing</option>
+    </select>
+
+    <button onclick="findRoute()">Optimize Route</button>
+    <button onclick="resetGrid()">Reset</button>
+
+</div>
+
+<p id="info"></p>
+
+<div id="grid"></div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>

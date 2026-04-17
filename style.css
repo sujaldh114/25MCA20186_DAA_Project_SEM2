@@ -1,0 +1,71 @@
+body {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI';
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+#controls {
+    margin-top: 10px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(15, 35px);
+    gap: 4px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cell {
+    width: 35px;
+    height: 35px;
+    background: #1e293b;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.cell:hover {
+    transform: scale(1.05);
+}
+
+/* States */
+.start { background: #22c55e; }
+.goal { background: #ef4444; }
+.traffic { background: #f59e0b; }
+.path { background: #38bdf8; }
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    background: #3b82f6;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #2563eb;
+}
+
+/* Dropdown */
+select {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    margin-right: 10px;
+}
+
+/* Info */
+#info {
+    margin-top: 10px;
+    font-weight: bold;
+}
